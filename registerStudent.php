@@ -13,7 +13,7 @@ if (!isset($nome) || !isset($cognome) || !isset($email) || !isset($password) || 
     $responseValue["message"] = "Manca qualcosa nei valori inviati";
 
     echo json_encode($responseValue);
-
+    exit(1);
 }
 
 
