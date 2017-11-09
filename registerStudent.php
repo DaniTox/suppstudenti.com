@@ -6,8 +6,7 @@ $email = htmlentities($_REQUEST["email"]);
 $password = htmlentities($_REQUEST["password"]);
 $classe = htmlentities($_REQUEST["classe"]);
 
-if (!isset($nome) || !isset($cognome) || !isset($email) || !isset($password) || !isset
-    ($classe)) {
+if ($nome == null || $cognome == null || $email == null || $password == null || $classe == null) {
 
     $responseValue["code"] = "400";
     $responseValue["message"] = "Manca qualcosa nei valori inviati";
