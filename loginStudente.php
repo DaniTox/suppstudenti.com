@@ -3,7 +3,7 @@
 $email = htmlentities($_REQUEST["email"]);
 $password = htmlentities($_REQUEST["password"]);
 
-if (!isset($email) || !isset($password)) {
+if ($email == null || $password == null) {
     $responsevalue["code"] = "400";
     $responsevalue["message"] = "Manca qualcosa nei valori richiesti";
 
