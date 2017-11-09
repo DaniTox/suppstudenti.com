@@ -19,7 +19,7 @@ if ($nome == null || $cognome == null || $email == null || $password == null || 
 require ("secure/Connection.php");
 
 $file = file_get_contents("credentials.json");
-$json = json_decode($file);
+$json = json_decode($file, true);
 $dbPasswd = $json["password"];
 $dbUser = $json["user"];
 
