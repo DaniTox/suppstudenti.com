@@ -1,3 +1,3 @@
 # suppstudenti.com [DEPRECATED]
-# Look at https://github.com/DaniTox/DBApp-Backend
+# Look at https://github.com/DaniTox/DBApp-Backend instead.
 
